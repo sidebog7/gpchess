@@ -1,0 +1,27 @@
+<html>
+<head>
+  <link rel="stylesheet" href="chessboard/css/chessboard-0.3.0.min.css" />
+</head>
+  <body>
+    {{{content}}}
+    <script src="jquery-3.2.0.min.js"></script>
+    <script src="chessboard/js/chessboard-0.3.0.min.js"></script>
+    <script>
+
+      var init = function() {
+
+        var cfg = {
+          pieceTheme: 'chessboard/img/chesspieces/wikipedia/{piece}.png',
+          position: 'start'
+        };
+        //--- start example JS ---
+        var board = ChessBoard('board', cfg);
+        //--- end example JS ---
+
+      }; // end init()
+      $(document).ready(init);
+
+    </script>
+
+ </body>
+</html>
